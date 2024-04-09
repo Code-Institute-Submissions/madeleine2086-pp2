@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=PT+Serif&display=swap');
+
+body {
+    background-image: url('../images/many-human-hands-simple-illustration_185757-1278.avif');
+    font-family: 'Lora', serif;
+    font-size: 30px;
+    text-align: center;
+    max-height: 100%;
+}
+
+h2 {
+    font-size: 100%;
+    background-color: rgba(245, 245, 220, 0.8);    
+}
+
+h3 {
+    font-size: 70%;
+}
+
+p {
+    font-size: 80%;
+}
+
+footer {
+    position: absolute;
+    background-color: beige;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 70%;
+    text-align: center;
+}
+
+header {
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.game {
+    display: grid;
+    grid-template-columns: auto;
+    max-width: 75%;
+    background-color: grey;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.players {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.player {
+    text-align: center;
+}
+
+.player-choice {
+    margin-bottom: 20px;
+}
+
+.game-result {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-button {
+    font-size: 60px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.user-button:hover {
+    background-color: white;
+}
+
+.result {
+    display: flex;
+    flex-direction:column;
+    padding: 30px;
+    align-items: center;
+}
+
