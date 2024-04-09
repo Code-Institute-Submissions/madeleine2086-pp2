@@ -11,6 +11,14 @@ let userScore = 0;
 let computerScore = 0;
 let result
 
+/* Game logic - use of function in correct order */
+possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
+    userChoice = e.target.id
+    userChoiceDisplay.innerHTML = userChoice
+    generateComputerChoice()
+    getResult()
+  }))
+
 /* Function to generate comupter choice */
 function generateComputerChoice() {
     const randomNumber = Math.floor(Math.random() * 3) + 1;
@@ -27,7 +35,7 @@ function generateComputerChoice() {
     computerChoiceDisplay.innerHTML = computerChoice
   }
 
-/* Function to compare user and computer's choices and decide on the result */
+/* Function to compare user and computer's choices and decide on the result and update the score */
 function getResult() {
     if (computerChoice === userChoice) {
       result = "It's a Draw!"
