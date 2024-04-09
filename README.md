@@ -1,110 +1,66 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Rock Paper Scissors Game
 
-Welcome Magda Dmitruk,
+Rock, Paper, Scissors is a simple yet entertaining game for players of all ages. The game does have 9 outcome combinations. Draws happen a third of the time, so for the rest of it there is a winner. The game is not complicated, the player has to choose one out of three buttons: Rock, Paper or Scissors. The rules are: Rock blunts Scissors, Scissors cuts Paper, Paper covers Rock. The objective is to defeat the computer by choosing a correct weapon without knowing the computer's choice.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![mock-up](https://github.com/madeleine2086/Game-Rock-Paper-Scissors/assets/136820651/881a5d56-bd5f-4a7d-bcf8-6eb6e78a19a1)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Features
 
-## Gitpod Reminders
+### Existing Features
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+- __The Header__
 
-`python3 -m http.server`
+  - The header tells the users what game they are playing and displayes rules of the game in a clear, simple way.
 
-A blue button should appear to click: _Make Public_,
+- __The Game Options__
 
-Another blue button should appear to click: _Open Browser_.
+  - There's three buttons to choose from: Rock, Paper and Scissors.
+  - Once a player clicks the button of their choice, computer makes its choice too and both choices are displayed along with the result for the user.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- __The Game Results__
 
-A blue button should appear to click: _Make Public_,
+  - The round can end in three different ways for the player. It can be a draw, win or loss.
+  - JavaScript code chooses a random option for the computer and displays it beside the players choice.
+  - The result is displayed under the choice buttons but above the player and the computer choices, along with either of the messages: "Draw!", "You Win!", "Computer Wins!".
+  - The result is clear for the user and the score is updated either for the player or the computer.
 
-Another blue button should appear to click: _Open Browser_.
+- __The Footer__
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+  - The footer section includes a clear message, displaying "Select a symbol to play again!". The player has to choose and click the button to start another round.
 
-To log into the Heroku toolbelt CLI:
+### Features Left to Implement
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+- __Room for improvement__
+  
+  - This game can have better graphics and use sound effects to emphasize winning and loosing, making it more interactive.
+  
+## Testing
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+This site was tested on all screen sizes, on Chrome and Microsoft Edge browsers.
 
-------
+### Validator Testing
 
-## Release History
+- HTML
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html)
+- CSS
+  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-running-2.0%252Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css)
+- JavaScript
+  - No errors were found when passing through the JavaScript validator (<https://jshint.com/>)
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+## Deployment
 
-**September 20 2023:** Update Python version to 3.9.17.
+- The site was deployed to GitHub pages. The steps to deploy are as follows:
+  - In the GitHub repository, navigate to the Settings tab
+  - From the source section drop-down menu, select the Master Branch
+  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+The live link can be found here - <https://madeleine2086.github.io/pp2/>
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+## Credits
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+- This project was inspired by example project Rock-Paper-Scissors at the end of the Javascript module.
+- The code written was inspired by the work of following online creators and their attempts to create the very same game:
+  - <https://www.youtube.com/@AniaKubow>
+  - <https://www.youtube.com/@BroCodez>
+  - <https://www.youtube.com/@akademiafrontendu9706>
+- The little graphics for buttons were taken from [Font Awesome](https://fontawesome.com/)
