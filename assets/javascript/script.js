@@ -26,3 +26,41 @@ function generateComputerChoice() {
     }
     computerChoiceDisplay.innerHTML = computerChoice
   }
+
+/* Function to compare user and computer's choices and decide on the result */
+function getResult() {
+    if (computerChoice === userChoice) {
+      result = "It's a Draw!"
+    }
+    if (computerChoice === "rock" && userChoice === "paper") {
+      result = "You Win!"
+      userScore++;
+      userScoreDisplay.textContent = userScore;
+    }
+    if (computerChoice === "rock" && userChoice === "scissors") {
+      result = "You Lose!"
+      computerScore++;
+      computerScoreDisplay.textContent = computerScore;
+    }
+    if (computerChoice === "paper" && userChoice === "scissors") {
+      result = "You Win!"
+      userScore++;
+      userScoreDisplay.textContent = userScore;
+    }
+    if (computerChoice === "paper" && userChoice === "rock") {
+      result = "You Lose!"
+      computerScore++;
+      computerScoreDisplay.textContent = computerScore;
+    }
+    if (computerChoice === "scissors" && userChoice === "rock") {
+      result = "You Win!"
+      userScore++;
+      userScoreDisplay.textContent = userScore;
+    }
+    if (computerChoice === "scissors" && userChoice === "paper") {
+      result = "You Lose!"
+      computerScore++;
+      computerScoreDisplay.textContent = computerScore;
+    }
+    resultDisplay.innerHTML = result
+  }
